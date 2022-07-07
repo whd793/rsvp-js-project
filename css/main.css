@@ -1,0 +1,111 @@
+/* use normalize css to reset basic layout setting. different basic layout
+every browser */
+/* for inline block, -4 margin right to 
+delete extra space caused by tabs/spaces in html  */
+/* 
+in the html, width=viewport-width zoom=1.0 to 
+fit the content within the viewport. Telling the browser
+that site is optimized for mobile and avoid zooming out to fit the content.  */
+/* wrapper/container is used to center the page  */
+/* Use Flex to create columns, navigation, or any 1 dimention layout */
+/* CREATE REUSABLE CSS SELECTORS TO DRY CSS */
+/* Dry classes */
+/* base styles */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #3a3a3a;
+  /* background-color: rgb(239, 239, 239); */
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  font-size: 0.95em;
+  margin-bottom: 1.8em;
+}
+
+h2, h3, a {
+  color: #093a58;
+}
+
+h2, h3 {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+/* Base layout styles */
+/* Media queries */
+/* @media screen and (min-width: 769px){
+
+}
+
+@media screen and (min-width: 1025px){
+
+}
+ */
+/* Flexbox Layout */
+/* flex container is the parent */
+/* flex item is its children */
+/* 
+@media all and (min-width: 640px) {
+
+} */
+/* how to create a sticky footer */
+/* 
+    when there is no enough content,
+    there might be a gap in the footer.
+    To fill the gap,
+    set 100vh of the content above footer.
+    To get rid of sidebar,
+    use min-height: calc(100vh - whatever_the_footer_height) */
+/* main styles */
+/* media queries */
+/* if we create breakpoint for devices,
+then it's not sustainable because
+new phone size coming out all the time */
+/* Whenever one column layout starts to look bad, instead
+of specific device width */
+/* @media only screen and min-width */
+/* clearfix modern way for preventing elements from
+overflowing or collapsing*/
+/* .clearfix::before, 
+.clearfix::after {
+    content: " ";
+    display: table;
+} */
+/* 
+why use flex?
+1. clearfix to prevent elements collapsing
+2. default space problem for inline-block */
+
+/*# sourceMappingURL=main.css.map */
