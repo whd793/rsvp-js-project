@@ -27,14 +27,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: #3a3a3a;
-  /* background-color: rgb(239, 239, 239); */
   margin: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 p {
@@ -42,25 +35,13 @@ p {
   margin-bottom: 1.8em;
 }
 
-h2, h3, a {
-  color: #093a58;
-}
-
-h2, h3 {
-  margin-top: 0;
-}
-
 a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-}
-
-.grid-container {
+.invitedList {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 250px 250px 250px;
 }
 
 /* Base layout styles */

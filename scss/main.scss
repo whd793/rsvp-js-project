@@ -1,7 +1,7 @@
 // partial imports
-@import 'partials/variables'
-
-
+// @import 'partials/variables'
+$text-color: #3a3a3a;
+$text-color-headings: #093a58;
 
 /* use normalize css to reset basic layout setting. different basic layout
 every browser */
@@ -38,46 +38,28 @@ body {
     font-family: 'Varela Round', sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    color: #3a3a3a;
-    /* background-color: rgb(239, 239, 239); */
+    color: $text-color;
     margin: 0;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
 
 p {
     font-size: .95em;
     margin-bottom: 1.8em;
 }
 
-h2,h3,a {
-    color: #093a58;
-}
-
-h2,h3 {
-    margin-top: 0;
-}
-
 a {
     text-decoration: none;
 }
 
-img {
-    max-width: 100%;
-}
+// img {
+//     max-width: 100%;
+// }
 
-.grid-container {
+.invitedList {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 250px 250px 250px;
 }
-
-
-
-
 /* Base layout styles */
 
 
